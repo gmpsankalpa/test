@@ -19,6 +19,7 @@ byte colPins[COLS] ={3, 2, 1, 0}; //connect to the column pinouts of the keypad
 //initialize an instance of class NewKeypad
 Keypad cKeypad = Keypad( makeKeymap(hexaKeys), rowPins, colPins, ROWS, COLS); 
 
+//initialize an instance of class NewKeypad
 void setup(){
   lcd.begin(16, 2); // Initialize the LCD
   lcd.clear();
@@ -26,7 +27,6 @@ void setup(){
   lcd.print("Press a key:");
   delay(200);
   lcd.clear();
-
 }
 
 String input1 = "";
